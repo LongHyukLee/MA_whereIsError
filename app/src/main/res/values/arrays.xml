@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="building">
+
+        <item>기념관</item>
+        <item>노천극장</item>
+        <item>누리관</item>
+        <item>동해문화예술관</item>
+        <item>비마관</item>
+        <item>한울관</item>
+        <item>복지관</item>
+        <item>새빛관</item>
+        <item>옥의관</item>
+        <item>중앙도서관</item>
+        <item>참빛관</item>
+
+    </string-array></resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280sp"
+        android:layout_height="225dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorSecondary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sss" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="KWheelchair Map"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-10dp"
+            android:text="- 휠체어 사용자를 위한 로드맵 -"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop = "15dp"
+            android:layout_gravity="center">
+
+
+            <TextView
+                android:id="@+id/StartText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/colorSecondary"
+                android:gravity="center"
+                android:text="출발지점"
+                android:padding="10dp"
+                android:textColor="#202020"
+                android:textColorHint="#a7a7a7"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/StartSpinner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/colorSecondary"
+                android:hint="출발지점"
+                android:inputType="textPassword"
+                android:entries="@array/building"
+                android:textColor="@color/black"
+                android:textColorHint="#a7a7a7" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop = "15dp"
+            android:layout_gravity="center">
+
+
+            <TextView
+                android:id="@+id/EndText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/colorSecondary"
+                android:text="도착지점"
+                android:padding="10dp"
+                android:textColor="#202020"
+                android:textColorHint="#a7a7a7"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/EndSpinner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/colorSecondary"
+                android:hint="도착지점"
+                android:inputType="textPassword"
+                android:entries="@array/building"
+                android:textColor="@color/black"
+                android:textColorHint="#a7a7a7" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SearchButton"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#cb2706"
+            android:text="검색"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/noticeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="어플사용법"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
